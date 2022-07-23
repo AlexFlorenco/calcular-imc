@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+:root {
+  --primary-color: rgb(17, 86, 102);
+  --primary-color-darker: rgb(9, 48, 56);
+}
+
+* {
+  box-sizing: border-box;
+  outline: 0;
+}
+
+body {
+  background-image: url('/projects/imc/assets/img/background.svg');
+  margin: 0;
+  padding: 0;
+  font-family: 'Open sans', sans-serif;
+  font-size: 1.3em;
+  line-height: 1.5em;
+  flex-direction: column;
+}
+
+.container {
+  max-width: 640px;
+  margin: 100px auto;
+  background: rgb(255, 255, 255);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+form .inputs{
+  margin: 20px 0;
+  display: flex;
+  justify-content: space-evenly;
+}
+form input, form label{
+  width: 125px;
+  margin: 0 auto;
+
+}
+form input {
+  font-size: 24px;
+  height: 50px;
+  padding: 0 20px;
+}
+
+form input:focus {
+  outline: 2px solid var(--primary-color);
+}
+
+form button {
+  border: none;
+  background: var(--primary-color);
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  height: 50px;
+  cursor: pointer;
+  padding: 10px 100px;
+  margin: 0 0 10px 170px;
+}
+
+form button:hover {
+  background: var(--primary-color-darker);
+}
+.container .tabela{
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 40px;
+}
+.container .calcule{
+  text-align: center;
+  font-size: 30px;
+}
+table th{
+  text-align: center;
+}
+table{
+  text-indent: 80px;
+}
+
+.paragrafo-resultado{
+  background: rgb(107, 255, 156);
+  padding: 10px 20px;
+}
